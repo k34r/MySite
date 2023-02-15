@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body><html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<title>english4</title>
+  <link rel="stylesheet" type="text/css" href="english4.css">
+</head>
+<a href="/../index.html">MySite</a>
+<div id="topper">
+<span id="p1">Количество слов в базе: </span><br>
+<span id="i">Использовано слов: </span><br>
+<span id="right">Правильных ответов: </span><br>
+<span id="wrong">Неправильных ответов: </span><br>
+<span id="percent" >Процент правильных ответов: </span><br>
+<span id="timer">Таймер:</span>
+<span id="i"></span>
+<button id="starttimer" onclick="starttimer()">start</button>
+<button id="stoptimer" onclick="stoptimer()">stop</button>
+</div>
+ 
+<div class="center">
+<p id="message"></p>
+<input id="userinput" type="text" name="userinput" onblur="this.focus()" autofocus >
+<input id="start" style="none"  type="button" value="START" onclick="EnglishWord()">
+</div>
+
+<script src="english4.js"></script>
+</body>
+</html>
