@@ -31,18 +31,20 @@ request.open('GET','english4.php');
 request.send();
 }      
 
+ //обработчик события по нажатию клавиши Enter
 document.querySelector('#userinput').addEventListener('keydown',function(e){
 	if(e.keyCode===13){ 
        onEnter();
     }
-}); //обработчик события по нажатию клавиши Enter
+});
  
 
 function onEnter() {
 	
 	
 	var userinput = document.getElementById('userinput').value; //слово в поле ввода
-		if (russian == userinput) {
+
+	if (russian == userinput) {
         document.getElementById('message').innerHTML = english+' - '+russian+' Правильно '; right++; 
         setTimeout(EnglishWord, 1000); 
         document.getElementById('userinput').value = ''; 
@@ -52,7 +54,15 @@ function onEnter() {
     	document.getElementById('message').innerHTML = 'Неправильно, '+ english+' - '+russian; 
     	 wrong++; document.getElementById('wrong').innerHTML = 'Неправильных ответов: '+wrong;
     }
+
+    if ((right+wrong) == 100){
+        
+
+        stoptimer();
+        document.getElementById('message').innerHTML = 'конец теста из 100 слов';
+    }
 }
+
 
 // функции таймера
 
@@ -65,7 +75,8 @@ function starttimer(){
     document.getElementById('timer').innerHTML = 'Таймер: '+i;
     i++;
    }
+
 function stoptimer(){
     window.clearInterval(window.timerId);
-}
+   }
 
