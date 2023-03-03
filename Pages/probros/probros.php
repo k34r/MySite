@@ -4,9 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Probros</title>
+	<link rel="stylesheet" type="text/css" href="CSS/css/bootstrap.min.css">
 </head>
 <body>
-	<a href="/../index.html">MySite</a>
+	<?php require_once 'PageComponents/header.html'; ?>
 
 <?php
 $city = 'Ivanovo';

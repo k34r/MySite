@@ -4,13 +4,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Help</title>
+    <link type='text/css' rel="stylesheet" href="CSS/css/bootstrap.min.css">
 	<style type="text/css">
-		body{font-family: century gothic;line-height: 1.7; margin: 70px;}
+    #text_pole { margin: 70px;}
         h1,h2{text-align: center;color: #338}
         span{color: #0b0;}
-		</style>
+        }
+	</style>
 </head>
 <body>
+
+<?php require_once 'PageComponents/header.html'; ?>
+<div id="text_pole">
 <h1>Что такое rewriterule</h1>
 <p>В сегодняшней статье рассмотрим работу модуля <i>mod_rewrite</i> сервера Apache, и как с помощью правил RewriteRule и RewriteCond работать с URL. Поговорим про описание и логику работы правила RewriteRule, а так же синтаксис некоторых директив модуля mod_rewrite.
 	<h2>Немного теории</h2>
@@ -165,7 +170,8 @@ RewriteCond %{REQUEST_FILENAME} -f
 <li>Флаг QSA указывает на подстановку строки запроса и ее НЕ ЧПУ аналог;</li>
 <li>Строка запроса /news/ аналогична НЕ ЧПУ адресу ?page=news;</li>
 <li>По запросу /news/ выводится контент точно такой же, как и если набрать ?page=news.</li>
-
+</ol>
+</div>
 
 </body>
 </html>

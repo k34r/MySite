@@ -4,9 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>timer</title>
+	<link rel="stylesheet" type="text/css" href="CSS/css/bootstrap.min.css">
 </head>
 <body>
-	<a href="/../index.html">MySyte</a>
+<?php require_once 'PageComponents/header.html'; ?>
+
 	<input type="text" value="0" id="text">
 	<button onclick="start()">start</button>
 	<button onclick='stop()'>stop</button>

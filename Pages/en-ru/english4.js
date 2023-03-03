@@ -27,7 +27,7 @@ function EnglishWord(){
         }
       }
     }
-request.open('GET','english4.php');
+request.open('GET','Pages/en-ru/english4.php');
 request.send();
 }      
 
@@ -55,11 +55,13 @@ function onEnter() {
     	 wrong++; document.getElementById('wrong').innerHTML = 'Неправильных ответов: '+wrong;
     }
 
-    if ((right+wrong) == 100){
-        
+// конец теста из 100 слов
 
+    if ((right) == 100){
+        
         stoptimer();
         document.getElementById('message').innerHTML = 'конец теста из 100 слов';
+        return false;
     }
 }
 
