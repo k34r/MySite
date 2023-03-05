@@ -4,9 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ajax</title>
+	<link rel="stylesheet" type="text/css" href="./CSS/my.css">
 </head>
 <body>
-
+<?php require_once './PageComponents/header.html'; ?>
 <input id="submit_ip_show" type="submit" value="show my ip" >
 <div id="show"></div>
 <script type="text/javascript">

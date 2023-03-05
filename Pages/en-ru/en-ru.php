@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 	<title>english-russian</title>
   <link rel="stylesheet" type="text/css" href="CSS/css/bootstrap.min.css">
-
+  <link rel="stylesheet" type="text/css" href="./CSS/my.css">
   </head>
 
 <body style="background-color: #ddf;">
