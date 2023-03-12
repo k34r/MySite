@@ -15,16 +15,16 @@ require_once 'PageComponents/header.html';
  		p{margin: 0}
  		b{margin: 30px}
  		.container1{width: 200px; height: 200px; background-color: #eef; margin: 15px 15px}
-		.item1{width:30px; height: 40px; background-color: #9e9;}
-		.item2{width:40px; height: 50px; background-color: #ee9;}
-		.item3{width:25px; height: 30px; background-color: #e99;}
+		.item1{width:30px; height: 40px; background-color: lime; opacity: 0.7}
+		.item2{width:40px; height: 50px; background-color: yellow; opacity: 0.7}
+		.item3{width:25px; height: 30px; background-color: red; opacity: 0.7;}
 
 </style>
 <h2>Единицы измерения</h2>
 <ul>
 	<li>px - пиксель</li>
-	<li>vh - 1% высоты окна браузера</li>
-	<li>vw - 1% ширины окна браузера</li>
+	<li>100vh - 100% высоты окна браузера</li>
+	<li>100vw - 100% ширины окна браузера</li>
 	<li>vmin - 1% меньшего размера окна браузера по высоте или ширине</li>
 	<li>vmax - 1% большего размера окна браузера по высоте или ширине</li>
 	<li>em - размер относительно размера шрифта родителя</li>
