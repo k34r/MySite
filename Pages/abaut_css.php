@@ -14,12 +14,19 @@ require_once 'PageComponents/header.html';
  		h2{font-size: 20px; text-align: center}
  		p{margin: 0}
  		b{margin: 30px}
- 		.container1{width: 200px; height: 200px; background-color: #eef; margin: 15px 15px}
-		.item1{width:30px; height: 40px; background-color: lime; opacity: 0.7}
+ 		.container1{width: 200px;  background-color: #eef; margin: 10px 10px; position: relative;}
+ 		.container2{background-color: #9db4c3;}
+ 		.item1{width:30px; height: 40px; background-color: lime; opacity: 0.7}
 		.item2{width:40px; height: 50px; background-color: yellow; opacity: 0.7}
 		.item3{width:25px; height: 30px; background-color: red; opacity: 0.7;}
 
 </style>
+<h2>Сбрасывание стилей</h2>
+* {<br>
+  margin: 0;<br>
+  padding: 0;<br>
+  box-sizing: border-box;<br>
+}
 <h2>Единицы измерения</h2>
 <ul>
 	<li>px - пиксель</li>
@@ -29,155 +36,138 @@ require_once 'PageComponents/header.html';
 	<li>vmax - 1% большего размера окна браузера по высоте или ширине</li>
 	<li>em - размер относительно размера шрифта родителя</li>
 	<li>rem(root em) - размер относительно корневого размера шрифта</li>
+	<li>fr - определенная доля от общего доступного пространства</li>
 </ul>
 
 
 
-<h1>flexbox</h1><br>
+<h2>display: flex</h2><br>
 
-<b>.container { display: flex }</b>
-
-<div style="display: flex; flex-wrap: wrap; justify-content: space-around">
+<div style=" display: flex;  justify-content: space-around">
 
 	<div class="container1">
-		<div style="width: 200px; height: 150px; background-color: #ddd;   display: flex; flex-wrap: wrap; ">
+		<div class="container2" style="display: flex; flex-wrap: wrap; ">
 			<p class="item1"></p>
 			<p class="item2"></p>
 			<p class="item3"></p>
 			<p class="item1"></p>
 			<p class="item2"></p>
 			<p class="item3"></p>
-			<p class="item1"></p>
-			<p class="item2"></p>
-			<p class="item3"></p>
-		</div>
-			flex-wrap: wrap
+		</div >
+		<p class="text">flex-wrap: wrap</p>
 	</div>
 
 	<div class="container1">
-	<div style="display: flex; justify-content:flex-start; width: 200px; height: 150px; background-color: #ddd">
+	<div class="container2" style="display: flex; justify-content:flex-start;">
 		<p class="item1"></p>
 		<p class="item2"></p>
 		<p class="item3"></p>
 		</div>
-		justify-content: flex-start
+		<p class="text">justify-content: flex-start</p>
 	</div>
 
 	<div class="container1">
-		<div style="width: 200px; height: 150px; background-color: #ddd; display: flex; justify-content:center">
+		<div  class="container2" style=" display: flex; justify-content:center">
 			<p class="item1"></p>
 			<p class="item2"></p>
 			<p class="item3"></p>
 		</div>
-		justify-content:center
+		<p class="text">justify-content:center</p>
 	</div>
 
 	<div class="container1">
-		<div style="width: 200px; height: 150px; background-color: #ddd; display: flex; justify-content:flex-end">
+		<div class="container2" style=" display: flex; justify-content:flex-end">
 			<p class="item1"></p>
 			<p class="item2"></p>
 			<p class="item3"></p>
 		</div>
-		justify-content: flex-end
+		<p class="text">justify-content: flex-end</p>
 	</div>
 
 	<div class="container1">
-		<div style="width: 200px; height: 130px; background-color: #ddd; display: flex; justify-content:space-between">
+		<div class="container2" style=" display: flex; justify-content:space-between">
 			<p class="item1"></p>
 			<p class="item2"></p>
 			<p class="item3"></p>
 		</div>
-	justify-content: space-between
+	<p class="text">justify-content: space-between</p>
 	</div>
 
 	<div class="container1">
-		<div style="width: 200px; height: 130px; background-color: #ddd; display: flex; justify-content:space-around">
+		<div class="container2" style=" display: flex; justify-content:space-around">
 			<p class="item1"></p>
 			<p class="item2"></p>
 			<p class="item3"></p>
 		</div>
-		justify-content:space-around
+		<p class="text">justify-content:space-around</p>
 	</div>
 
 	<div class="container1">
-		<div style="width: 200px; height: 130px; background-color: #ddd; display: flex; justify-content:space-evenly">
+		<div class="container2" style=" display: flex; justify-content:space-evenly">
 			<p class="item1"></p>
 			<p class="item2"></p>
 			<p class="item3"></p>
 		</div>
-		justify-content: space-evenly
+		<p class="text">justify-content: space-evenly</p>
 	</div>
 
 	<div class="container1">
-		<div style="width: 200px; height: 130px; background-color: #ddd; display: flex; align-items: flex-start">
+		<div class="container2" style=" display: flex; align-items: flex-start">
 		<p class="item1"></p>
 		<p class="item2"></p>
 		<p class="item3"></p>
 		</div>
-		align-items: flex-start
+		<p class="text">align-items: flex-start</p>
 	</div>
 
 </div>
 
-<h2>align-items</h2>
+
 
 <div style="display: flex; justify-content: space-around">
 
-
-
-<div style="width:200px; height: 200px;">
-.container { display: flex; align-items: flex-end }
-<div style="width: 200px; height: 100px; background-color: #ddd; display: flex; align-items: flex-end">
-		<p class="item1"></p>
-		<p class="item2"></p>
-		<p class="item3"></p>
+	<div class="container1">
+		<div class="container2" style="display: flex; align-items: flex-end">
+			<p class="item1"></p>
+			<p class="item2"></p>
+			<p class="item3"></p>
+		</div>
+		align-items: flex-end
 	</div>
-</div>
 
-<div style="width:200px; height: 200px;">
-.container { display: flex; align-items: center }
-<div style="width: 200px; height: 100px; background-color: #ddd; display: flex; align-items: center">
-		<p class="item1"></p>
-		<p class="item2"></p>
-		<p class="item3"></p>
+	<div class="container1">
+		<div class="container2" style=" display: flex; align-items: center">
+			<p class="item1"></p>
+			<p class="item2"></p>
+			<p class="item3"></p>
+		</div>
+		align-items: center
 	</div>
-</div>
 
-<div style="width:200px; height: 200px;">
-.container { display: flex; align-items: stretch }
-<div style="width: 200px; height: 100px; background-color: #ddd; display: flex; align-items: stretch">
-		<p class="item1"></p>
-		<p class="item2"></p>
-		<p class="item3"></p>
+	<div class="container1">
+  	<div class="container2" style=" display: flex; align-items: stretch">
+			<p class="item1"></p>
+			<p class="item2"></p>
+			<p class="item3"></p>
+		</div>
+		align-items: stretch
 	</div>
-</div>
 
-<div style="width:200px; height: 200px;">
-.container { display: flex; align-items: baseline }
-<div style="width: 200px; height: 100px; background-color: #ddd; display: flex; align-items: baseline">
-		<p class="item1"></p>
-		<p class="item2"></p>
-		<p class="item3"></p>
+	<div class="container1">
+  	<div class="container2" style=" display: flex; align-items: baseline">
+			<p class="item1"></p>
+			<p class="item2"></p>
+			<p class="item3"></p>
+		</div>
+		align-items: baseline
 	</div>
-</div>
-
-<div style="width:200px; height: 200px;">
-.container { display: flex; align-items: first baseline }
-<div style="width: 200px; height: 100px; background-color: #ddd; display: flex; align-items: first baseline">
-		<p class="item1"></p>
-		<p class="item2"></p>
-		<p class="item3"></p>
-	</div>
-</div>
 
 </div>
 
-<h2>alighn content</h2>
 
-<div style="width: 200px; height: 200px; background-color: #ddd; flex-wrap: wrap;  display: flex; align-content: flex-start;">
-		<p class="item1"></p>
-		<p class="item2"></p>
-		<p class="item3"></p>
+
+<div class="container1">
+	<div class="container2" style="display: flex; align-content: flex-start;">
 		<p class="item1"></p>
 		<p class="item2"></p>
 		<p class="item3"></p>
@@ -185,10 +175,20 @@ require_once 'PageComponents/header.html';
 		<p class="item2"></p>
 		<p class="item3"></p>
 	</div>
+	align-content: flex-start
+</div>
 
 <h2>grid</h2>
+<p>display: grid</p>
+<p>grid-template-columns: repeat(3,1fr)<p>
+<p>grid-column-gap: 5px</p>
 
 
+<div style="width: 200px; height: 200px; background-color: #ddd; display:grid; grid-template-columns: repeat(3,1fr); grid-column-gap: 5px ;">
+	<p class="item1"></p>
+	<p class="item2"></p>
+	<p class="item3"></p>
 </div>
+
 </body>
 </html>
