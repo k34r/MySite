@@ -60,7 +60,7 @@ function onEnter() {
     if ((right) == 100){
         
         stoptimer();
-        document.getElementById('message').innerHTML = 'конец теста из 100 слов';
+        document.getElementById('userinput').innerHTML = 'конец теста из 100 слов';
         return false;
     }
 }
