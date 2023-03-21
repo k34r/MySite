@@ -11,38 +11,47 @@
 require_once 'PageComponents/header.html';
 ?>
 <style>
-/* roboto-regular - latin */
+/* open-sans-regular - cyrillic_latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Roboto';
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/roboto-v30-latin-regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/roboto-v30-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/roboto-v30-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/roboto-v30-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/roboto-v30-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+  src: url('../fonts/open-sans-v34-cyrillic_latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/open-sans-v34-cyrillic_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v34-cyrillic_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v34-cyrillic_latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v34-cyrillic_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v34-cyrillic_latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
 }
-/* roboto-500 - latin */
+/* open-sans-500 - cyrillic_latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Roboto';
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/roboto-v30-latin-500.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/roboto-v30-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/roboto-v30-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/roboto-v30-latin-500.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/roboto-v30-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/roboto-v30-latin-500.svg#Roboto') format('svg'); /* Legacy iOS */
+  src: url('../fonts/open-sans-v34-cyrillic_latin-500.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/open-sans-v34-cyrillic_latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v34-cyrillic_latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v34-cyrillic_latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v34-cyrillic_latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v34-cyrillic_latin-500.svg#OpenSans') format('svg'); /* Legacy iOS */
 }
 
-body{font-family: 'Roboto';
+@keyframes rotate {
+	from {
+		transform: rotateX(0deg);
+	}
+	to {
+		transform:  rotateX(360deg);
+	}
+}
+
+body{font-family: 'Open Sans';
 		font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.4;
     color: #000;}
 	h1{font-size: 32px; text-align: center}
  		h2{font-size: 20px; text-align: center}
@@ -114,11 +123,44 @@ body{font-family: 'Roboto';
 
 	<div class="container1">
 		<div class="container2">
+			<p class="item1" style="animation: rotate 1s infinite;">1</p>
+		</div >
+		<p class="text">@keyframes rotate {
+	from {
+		transform: rotateX(0deg);
+	}
+	to {
+		transform:  rotateX(360deg);
+	}
+}</p>
+<p class="text">animation: rotate 1s infinite;ё1</p>
+	</div>
+
+	<div class="container1">
+		<div class="container2">
 			<p class="item1" style="display: inline">1</p>
 			<p class="item2" style="display: inline">2</p>
 			<p class="item3" style="display: inline">3</p>
 		</div >
 		<p class="text">display: inline</p>
+	</div>
+
+	<div class="container1">
+		<div class="container2">
+			<p class="item1" style="display: block">1</p>
+			<p class="item2" style="display: block">2</p>
+			<p class="item3" style="display: block">3</p>
+		</div >
+		<p class="text">display: block</p>
+	</div>
+
+	<div class="container1">
+		<div class="container2">
+			<p class="item1" style="display: inline-block">1</p>
+			<p class="item2" style="display: inline-block">2</p>
+			<p class="item3" style="display: inline-block">3</p>
+		</div >
+		<p class="text">display: inline-block</p>
 	</div>
 
 

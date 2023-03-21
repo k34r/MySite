@@ -55,13 +55,13 @@ function onEnter() {
     	 wrong++; document.getElementById('wrong').innerHTML = 'Неправильных ответов: '+wrong;
     }
 
-// конец теста из 100 слов
+    // конец теста из 100 слов
 
     if ((right) == 100){
         
         stoptimer();
-        document.getElementById('userinput').innerHTML = 'конец теста из 100 слов';
-        return false;
+        document.getElementById('userinput').value = 'конец теста из 100 слов';
+        document.getElementById('message').innerHTML = '';
     }
 }
 

@@ -10,5 +10,7 @@ Router::Page('Pages/probros/probros.php','probros');
 Router::Page('Pages/AJAX/ajax.php','ajax');
 Router::Page('Pages/Test/test.php', 'test');
 Router::Page('Pages/abaut_css.php', 'cssabaut');
+Router::Page('Pages/HTML/HTML.php', 'html');
+Router::Page('Pages/HTML/HTML_questions.php', 'HTML_questions');
 
 Router::enable();

@@ -1,10 +1,11 @@
 body {
 	margin: 0;
+	background-color: #f0f0ff;
 }
 
 .header_nav {
 	height: 60px;
-	background-color: #ddf;
+	background-color: #d3d3f5;
 	display: flex;
     align-items: center;
 }
@@ -15,4 +16,109 @@ body {
     color: #002;
     margin-left: 20px;
 
+}
+
+.button {
+	width: 80px;
+	height: 35px;
+	background-color: #1B7DFF;
+	color: #fff;
+	font-weight: 500;
+    font-size: 18px;
+	border: 0;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+
+/******************************************************
+*********** en-ru styles start ************************
+******************************************************/
+.list-group {
+	margin-bottom: 50px;
+}
+
+.list-group-item {
+	background-color: #eef;
+}
+
+.english_word {
+	font-size: 20px;
+}
+
+.user_input {
+	width: 500px;
+	height: 30px;
+	font-size: 20px;
+	border: 0;
+	outline: none;
+	border-radius: 7px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	background-color: #eef;
+}
+.user_input:hover, .user_input:focus, .user_input:active {
+	border: 0;
+}
+
+.button {
+	width: 80px;
+	height: 35px;
+	background-color: #1B7DFF;
+	color: #fff;
+	font-weight: 500;
+    font-size: 18px;
+	border: 0;
+	border-radius: 5px;
+	margin: 0 auto;
+	}
+
+.button:hover, .button:focus, .button:active {
+	background-color: #1865cb;
+}
+
+.container_user {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.container_input {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.container_button {
+	width: 80px;
+	margin: 0 auto;
+}
+
+/********* HTML styles start ******************/
+
+.user_text {
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.user_text_area {
+	width: 500px;
+	border: none;
+}
+.user_text_area:active, .user_text_area:focus, .user_text_area:hover, .user_text_area:visited  {
+	border: none;
+	outline: none;
+}
+
+.link_button {
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #1B7DFF;;
+	margin: 15px 45px;
+}
+
+.link_button:hover {
+	background-color: #1865cb;
 }

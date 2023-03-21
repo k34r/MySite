@@ -4,13 +4,12 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 	<title>english-russian</title>
-  <!--<link rel="stylesheet" type="text/css" href="CSS/css/bootstrap.min.css">-->
-  <link rel="stylesheet" type="text/css" href="./CSS/en-ru.css">
-  </head>
+  <link rel="stylesheet" type="text/css" href="./CSS/my.css">
+</head>
 
 <body>
   <?php require_once 'PageComponents/header.html'; ?>
-<div class="mt-4">
+  <div class="mt-4">
   <div id="topper" class="container">
    <ul class="list-group" >
      <li id="p1" class="list-group-item">Количество слов в базе: </li>
