@@ -1,12 +1,37 @@
-body {
+body, p, ul {
 	margin: 0;
+	padding: 0;
+
+}
+
+body {
 	background-color: #f0f0ff;
 	box-sizing: border-box;
+}
+
+*, *:after, *:befor {
+	box-sizing: inherit;
 }
 
 h3 {
 	margin: 20px;
 }
+
+ul {
+	list-style-type: none;
+	padding: 20px 150px 50px 150px;
+	font-size: 18px;
+}
+
+li {
+	border: 2px solid grey;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	padding-left: 3px;
+	background-color: #dddddd;
+}
+
+/************** header styles start ****************/
 
 .header_nav {
 	height: 60px;
@@ -20,7 +45,10 @@ h3 {
 	font-size: 20px;
     color: #002;
     margin-left: 20px;
+}
 
+.nav_link:hover {
+	color: #950000;
 }
 
 .button {
@@ -38,14 +66,6 @@ h3 {
 /******************************************************
 *********** en-ru styles start ************************
 ******************************************************/
-.list-group {
-	margin-bottom: 50px;
-}
-
-.list-group-item {
-	background-color: #eef;
-}
-
 .english_word {
 	font-size: 20px;
 }
@@ -79,6 +99,10 @@ h3 {
 
 .button:hover, .button:focus, .button:active {
 	background-color: #1865cb;
+}
+
+.container_en-word {
+	height: 30px;
 }
 
 .container_user {

@@ -13,7 +13,6 @@
   <div id="topper" class="container">
    <ul class="list-group" >
      <li id="p1" class="list-group-item">Количество слов в базе: </li>
-     <li id="i" class="list-group-item">Использовано слов: </li>
      <li id="right" class="list-group-item">Правильных ответов: </li>
      <li id="wrong" class="list-group-item">Неправильных ответов: </li>
      <li id="percent" class="list-group-item">Процент правильных ответов: </li>

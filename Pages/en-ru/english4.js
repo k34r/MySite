@@ -20,7 +20,6 @@ function EnglishWord(){
 		id = arr[2];
         document.querySelector('#message').innerHTML = english;
         document.getElementById('p1').innerHTML = 'Количество слов в базе: '+id;
-        document.getElementById('i').innerHTML = 'Использовано слов: '+right;
         document.getElementById('right').innerHTML = 'Количество правильных ответов: '+right;
         document.getElementById('wrong').innerHTML = 'Неправильных ответов: '+wrong;
         if((right+wrong)!==0){document.getElementById('percent').innerHTML = 'Процент правильных ответов: '+Math.floor((right/(right+wrong))*100)+'%';

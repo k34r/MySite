@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>test</title>
-	<link rel="stylesheet" type="text/css" href="CSS/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="Pages/Test/test.css">
 </head>
 <body>

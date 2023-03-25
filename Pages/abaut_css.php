@@ -65,7 +65,10 @@ body{font-family: 'Open Sans';
 		.item11{ background-color: lime; opacity: 0.7}
 		.item22{ background-color: yellow; opacity: 0.7; }
 		.item33{ background-color: red; opacity: 0.7;}
+
+li{list-style-type: none;}
 }
+
 
 </style>
 <h2>Сбрасывание стилей</h2>

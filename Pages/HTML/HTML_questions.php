@@ -9,7 +9,7 @@
 <body>
 <?php require_once 'PageComponents/header.html'; ?>
 <div class="user_text">
-	<textarea name="" id="" cols="30" rows="10" class="user_text_area">
+	<textarea name="" id="" cols="30" rows="13" class="user_text_area">
 		Перечислите семантические теги HTML 5
 	</textarea>
 </div>
