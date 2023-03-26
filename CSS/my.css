@@ -102,7 +102,7 @@ li {
 }
 
 .container_en-word {
-	height: 30px;
+	height: 50px;
 }
 
 .container_user {
@@ -157,7 +157,8 @@ li {
 }
 
 .semantic_tag {
-	border: 1px solid black;
+	border: 2px solid gray;
+	border-radius: 5px;
 	width: 500px;
 	margin: 10px;
 }

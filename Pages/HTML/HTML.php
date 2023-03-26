@@ -12,7 +12,7 @@
 	<ol class="semantic_tag_list">
 		<li class="semantic_item">&ltheader&gt - шапка сайта</li>
 		<li class="semantic_item">&ltarticle&gt -  выделяет содержание сайта вроде новости, статьи, записи блога, форума или др.</li>
-		<li class="semantic_item">&ltsection&gt - раздел документа</li>
+		<li class="semantic_item">&ltsection&gt - раздел документа, подразумевает наличие заголовка</li>
 		<li class="semantic_item">&ltaside&gt - определяет сайдбар</li>
 		<li class="semantic_item">&ltdetails&gt</li>
 		<li class="semantic_item">&ltfigure&gt - используется для группировки любых элементов, например изображений и подписей к ним</li>
