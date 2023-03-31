@@ -1,12 +1,15 @@
 body, p, ul {
 	margin: 0;
 	padding: 0;
-
 }
 
 body {
 	background-color: #f0f0ff;
 	box-sizing: border-box;
+}
+
+main {
+	margin: 10px 20px;
 }
 
 *, *:after, *:befor {
@@ -17,19 +20,13 @@ h3 {
 	margin: 20px;
 }
 
-ul {
-	list-style-type: none;
-	padding: 20px 150px 50px 150px;
-	font-size: 18px;
+* {
+
 }
 
-li {
-	border: 2px solid grey;
-	margin-bottom: 5px;
-	border-radius: 5px;
-	padding-left: 3px;
-	background-color: #dddddd;
-}
+
+
+
 
 /************** header styles start ****************/
 
@@ -120,6 +117,20 @@ li {
 	margin: 0 auto;
 }
 
+.list-group {
+	list-style-type: none;
+	padding: 20px 150px 50px 150px;
+	font-size: 18px;
+}
+
+.list-group-item {
+	border: 2px solid grey;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	padding-left: 3px;
+	background-color: #dddddd;
+}
+
 /********* HTML styles start ******************/
 
 .user_text {
@@ -130,8 +141,10 @@ li {
 }
 
 .user_text_area {
-	width: 500px;
+	width: 1000px;
+	height: 400px;
 	border: none;
+	font-size: 18px;
 }
 .user_text_area:active, .user_text_area:focus, .user_text_area:hover, .user_text_area:visited  {
 	border: none;
@@ -141,11 +154,13 @@ li {
 .link_button {
 	text-decoration: none;
 	display: inline-block;
-	padding: 10px;
+	padding: 7px 10px;
 	border-radius: 5px;
 	color: #fff;
-	background-color: #1B7DFF;;
-	margin: 15px 45px;
+	background-color: #1B7DFF;
+	display: block;
+	width: fit-content;
+	margin: 5px auto;
 }
 
 .link_button:active {
@@ -161,4 +176,13 @@ li {
 	border-radius: 5px;
 	width: 500px;
 	margin: 10px;
+}
+
+.semantic_tag_list {
+	padding-right: 10px;
+}
+
+/**************** js styles start ****************/
+.jspage__ul {
+	list-style-type: none;
 }
