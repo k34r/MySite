@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	margin: 0 20px;
+}
+
+ol, ul {
+	background-color: #dde;
+	display: inline-block;
+	margin: 10px 10px;
+	list-style-type: none;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding-left: 5px;
+}
+/************** header styles start ****************/
+.header_nav {
+	height: 60px;
+	background-color: #d3d3f5;
+	display: flex;
+    align-items: center;
+}
+
+.nav_link {
+	text-decoration: none;
+	font-size: 20px;
+    color: #002;
+    margin-left: 20px;
+}
+
+.nav_link:hover {
+	color: #950000;
+}
+
+.button {
+	width: 80px;
+	height: 35px;
+	background-color: #1B7DFF;
+	color: #fff;
+	font-weight: 500;
+    font-size: 18px;
+	border: 0;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotateX(0deg);
+	}
+	to {
+		transform:  rotateX(360deg);
+	}
+}
+
+body {
+	background-color: #f0f0ff;
+	font-family: 'Open Sans';
+	font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000;
+}
+	h1{font-size: 32px; text-align: center}
+ 		h2,h3{font-size: 16px;}
+ 		p{margin: 0}
+ 		b{margin: 30px}
+ 		.container1{width: 150px;  background-color: #dde; margin: 10px 10px; position: relative;}
+ 		.container2{background-color: #9db4c3;}
+ 		.item1{width:30px; height: 40px; background-color: lime; opacity: 0.7}
+		.item2{width:40px; height: 50px; background-color: yellow; opacity: 0.7}
+		.item3{width:25px; height: 30px; background-color: red; opacity: 0.7;}
+		.item11{ background-color: lime; opacity: 0.7}
+		.item22{ background-color: yellow; opacity: 0.7; }
+		.item33{ background-color: red; opacity: 0.7;}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+
+

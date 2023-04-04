@@ -19,7 +19,7 @@
 		<li class="semantic_item">&ltfigure&gt - используется для группировки любых элементов, например изображений и подписей к ним</li>
 		<li class="semantic_item">&ltfigcaption&gt - подпись к figure</li>
 		<li class="semantic_item">&ltfooter&gt - нижняя часть (подвал)</li>
-		<li class="semantic_item">&ltmark&gt</li>
+		<li class="semantic_item">&ltmark&gt - помечает текст как выделенный</li>
 		<li class="semantic_item">&ltdetails&gt</li>
 		<li class="semantic_item">&ltsummary&gt</li>
 		<li class="semantic_item">&lttime&gt</li>

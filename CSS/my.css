@@ -83,19 +83,22 @@ h3 {
 }
 
 .button {
-	width: 80px;
-	height: 35px;
-	background-color: #1B7DFF;
-	color: #fff;
+	width: 100px;
+	height: 100px;
+	background-color: #d10101;
+	color: rgba(255, 255, 255, .8);
 	font-weight: 500;
     font-size: 18px;
-	border: 0;
-	border-radius: 5px;
+	border: 6px solid #bdba9a;
+	border-radius: 50%;
 	margin: 0 auto;
+	padding: 0;
+	box-shadow: inset 1px 1px 3px 2px rgba(0, 0, 0, .5);
 	}
 
-.button:hover, .button:focus, .button:active {
-	background-color: #1865cb;
+.button__pushed {
+	box-shadow: inset 10px 10px 10px 2px rgba(0, 0, 0, .5);
+	color: rgba(255, 255, 255, .9);
 }
 
 .container_en-word {

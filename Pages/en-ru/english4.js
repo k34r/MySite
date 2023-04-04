@@ -25,9 +25,6 @@ function EnglishWord(){
         if((right+wrong)!==0) {
             document.getElementById('percent').innerHTML = 'Процент правильных ответов: '+Math.floor((right/(right+wrong))*100)+'%';
         }
-        if(right == 100) {
-            return;
-        }
       }
     }
 request.open('GET','Pages/en-ru/english4.php');
@@ -85,4 +82,13 @@ function starttimer(){
 function stoptimer(){
     window.clearInterval(window.timerId);
    }
+
+   // стилизация кнопки
+   (function() {
+    const buttonstart = document.querySelector('.button');
+    console.log(buttonstart);
+    buttonstart.addEventListener('click', function() {
+        buttonstart.classList.add('button__pushed');
+    });
+   }())
 
