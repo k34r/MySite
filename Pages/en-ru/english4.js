@@ -49,20 +49,16 @@ function onEnter() {
         setTimeout(EnglishWord, 1000); 
         document.getElementById('userinput').value = '';
 
-    } else {
-    	document.getElementById('message').innerHTML = 'Неправильно, '+ english+' - '+russian; 
-    	 wrong++; document.getElementById('wrong').innerHTML = 'Неправильных ответов: '+wrong;
-    }
-
-    // конец теста из 100 слов
-
-     if ((right) == 100){
-
+        if ((right) == 100) {  //после ста слов конец теста
         stoptimer();
         document.getElementById('userinput').value = 'конец теста из 100 слов';
         document.getElementById('message').innerHTML = '';
         }
 
+    } else {
+    	document.getElementById('message').innerHTML = 'Неправильно, '+ english+' - '+russian;
+    	 wrong++; document.getElementById('wrong').innerHTML = 'Неправильных ответов: '+wrong;
+    }
 
 }
 
@@ -83,7 +79,7 @@ function stoptimer(){
     window.clearInterval(window.timerId);
    }
 
-   // стилизация кнопки
+   // стилизация кнопки при нажатии
    (function() {
     const buttonstart = document.querySelector('.button');
     console.log(buttonstart);

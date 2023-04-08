@@ -59,6 +59,19 @@ require_once 'PageComponents/header.html';
 		<li>4.stretch</li>
 		<li>5.baseline</li>
 	</ul>
+
+	<ul>
+		<h3>значения свойства box-shadow</h3>
+		<li>1.x-offset</li>
+		<li>2.y-offset</li>
+		<li>3.радиус размытия</li>
+		<li>4.распространение тени</li>
+		<li>5.непрозрачность</li>
+	</ul>
+	<div class="picture__wrapper">
+		<img src="./image/ryzen-small.jpg" alt="" class="picture">
+	</div>
+	<canvas id="canvas"></canvas>
 </div>
 
 
@@ -279,7 +292,7 @@ require_once 'PageComponents/header.html';
 
 </div>
 
-
+<script type="module" src="./Pages/about_css.js"></script>
 </main>
 </body>
 </html>

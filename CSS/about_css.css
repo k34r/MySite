@@ -85,5 +85,26 @@ body {
 	align-items: flex-start;
 }
 
+.picture {
+	display: block;
+	border-radius: 5px;
+	transition: .2s;
+}
+
+.picture:hover {
+	transform: scale(1.05);
+}
+
+.picture__wrapper {
+	margin: 10px 10px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+
+
+#canvas {
+	background-color: #000;
+}
 
 
