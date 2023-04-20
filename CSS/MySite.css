@@ -1,0 +1,12 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.background {
+	width: 100%;
+	height: 100vh;
+	background: url(../image/feature.jpg) no-repeat center;
+	background-size: cover;
+}
+
