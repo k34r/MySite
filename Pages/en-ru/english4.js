@@ -44,18 +44,24 @@ function onEnter() {
 	
 	var userinput = document.getElementById('userinput').value; //слово в поле ввода
 
-	if (russian == userinput && right < 100) {
+	if (russian == userinput) {
         document.getElementById('message').innerHTML = english+' - '+russian+' Правильно '; right++; 
-        setTimeout(EnglishWord, 1000); 
         document.getElementById('userinput').value = '';
-
-        if ((right) == 100) {  //после ста слов конец теста
-        stoptimer();
-        document.getElementById('userinput').value = 'конец теста из 100 слов';
-        document.getElementById('message').innerHTML = '';
+          if ( right <= 100) {
+        setTimeout(EnglishWord, 1000);
+            }
+          if ((right) === 101) {  // после ста слов конец теста
+            stoptimer();
+            document.getElementById('userinput').value = 'конец теста из 100 слов';
+            document.getElementById('message').innerHTML = '';
+            }
         }
 
-    } else {
+
+
+
+
+    else {
     	document.getElementById('message').innerHTML = 'Неправильно, '+ english+' - '+russian;
     	 wrong++; document.getElementById('wrong').innerHTML = 'Неправильных ответов: '+wrong;
     }
