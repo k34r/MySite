@@ -52,8 +52,9 @@ function onEnter() {
             }
           if ((right) === 101) {  // после ста слов конец теста
             stoptimer();
-            document.getElementById('userinput').value = 'конец теста из 100 слов';
+            document.getElementById('message').innerHTML = english+' - '+russian+' Правильно ';
             document.getElementById('message').innerHTML = '';
+            document.getElementById('userinput').value = 'конец теста из 100 слов';
             }
         }
 
