@@ -1,13 +1,13 @@
 
-var arr;
-var english;
-var russian;
-var id;
-var right = 0; //количество правильных ответов
-var wrong = 0; //количество неправильных ответов
+let arr;
+let english;
+let russian;
+let id;
+let right = 0; //количество правильных ответов
+let wrong = 0; //количество неправильных ответов
 
 
-var request = new XMLHttpRequest();
+let request = new XMLHttpRequest();
 
 function EnglishWord(){
 
